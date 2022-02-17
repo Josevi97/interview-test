@@ -42,13 +42,19 @@ public class ProductService {
     }
 
     public ProductEntity updateProduct(Long id, ProductBean productBean)
-            throws InvalidProductDataException, ProductNotFoundException {
+            throws InvalidProductDataException, ProductNotFoundException, ProductAlreadyExistsException {
 
         if (productBean == null || !productBean.isValid()) {
             throw new InvalidProductDataException();
         }
 
         ProductEntity productEntity = this.productRepository.findById(id).orElseThrow(ProductNotFoundException::new);
+
+        if (this.productRepository
+                .existsByCode(productBean.getCode()) && !productEntity.getCode().equals(productBean.getCode())) {
+            throw new ProductAlreadyExistsException();
+        }
+
         productEntity.setCode(productBean.getCode());
         productEntity.setName(productBean.getName());
         productEntity.setDescription(productBean.getDescription());
