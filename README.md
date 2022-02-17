@@ -14,3 +14,5 @@ Explicacion general:
 3. El controlador dirige al servicio correspondiente y llama a la función que se encarga de crear un producto nuevo.
 4. Se realizan ciertas precondiciiones para comprobar que se cumplen con ciertos requisitos. Por ejemplo, comprueba que el bean sea valido o que el producto no exista, de no ser así, se lanzarían excepciones (InvalidProductDataException o ProductAlreadyExistsException, en este caso). De no saltar ninguna exception, el bean se transformaría en una entidad mediante un metodo que tiene y se almacenaría en la base de datos haciendo uso del repositorio correspondiente. En este caso, ProductRepository.
 6. El servicio le devuelve la entidad al controlador y finalmente responde con este objeto, en caso de que no haya habido ningun error, haciendo uso del ResponseEntity.
+
+Destacar que producto tiene la columna "code" como campo único.
