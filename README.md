@@ -6,7 +6,7 @@ La aplicación se divide empezando desde la capa más cercana a la base de datos
 - Controladores, son los encargados de dirigir a los servicios correspondientes según las peticiones. Para los controladores (solo hay uno en este caso), los repositorios son completamente invisibles, dejando este trabajo a la capa de servicios.
 - Entidades, son los objetos que devuelve la api.
 - Beans, son los objetos que entran por la api, de esta forma no me tengo que preocupar de que se intente modificar un campo como por ejemplo el id de un producto que ya existe. 
-- Constantes, han sido utilizados como "metadatos" para fijar los requisitos de las columnas de una tabla.
+- Constantes, han sido utilizados como "metadatos" para fijar los requisitos de las columnas de una tabla, así como para comprobar si un bean es valido.
 
 Explicacion general:
 1. Se realiza una consulta, supongamos de tipo post en /products.
