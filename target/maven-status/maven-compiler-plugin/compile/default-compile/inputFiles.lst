@@ -1,1 +1,11 @@
-/home/josevi/Documents/FP/Segundo/DECS/maven-projects/pproject/src/main/java/interview/PprojectApplication.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/beans/ProductBean.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/exceptions/ProductNotFoundException.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/exceptions/ProductAlreadyExistsException.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/api/ProductController.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/constants/ProductConstants.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/PprojectApplication.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/repositories/ProductRepository.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/exceptions/InvalidProductDataException.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/exceptions/ApiException.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/entities/ProductEntity.java
+/home/josevi/Documents/FP/Segundo/DECS/maven-projects/interview-test/src/main/java/interview/services/ProductService.java
