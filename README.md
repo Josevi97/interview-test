@@ -1,5 +1,7 @@
 # interview-
 
+La imagen de docker que contiene ambos servicios es: josevi97/interview-test
+
 La aplicación se divide empezando desde la capa más cercana a la base de datos, de la siguiente manera:
 - Repositorios, interfaces que extienden de JPA.
 - Servicios, se comunican con los repositorios para interactuar con la base de datos. A su vez, los servicios se encargarán de comprobar que se cumplen las precondiciones necesarias para que la funcion se ejecute correctamente, en caso de no ser así, lanzarían excepciones.
