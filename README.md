@@ -4,7 +4,7 @@ La imagen de docker que contiene ambos servicios es: josevi97/interview-test
 
 La aplicación se divide empezando desde la capa más cercana a la base de datos, de la siguiente manera:
 - Repositorios, interfaces que extienden de JPA.
-- Servicios, se comunican con los repositorios para interactuar con la base de datos. A su vez, los servicios se encargarán de comprobar que se cumplen las precondiciones necesarias para que la funcion se ejecute correctamente, en caso de no ser así, lanzarían excepciones.
+- Servicios, se comunican con los repositorios para interactuar con la base de datos. A su vez, los servicios se encargarán de comprobar que se cumplen las precondiciones necesarias para que la función se ejecute correctamente, en caso de no ser así, lanzarían excepciones.
 - Controladores, son los encargados de dirigir a los servicios correspondientes según las peticiones. Para los controladores (solo hay uno en este caso), los repositorios son completamente invisibles, dejando este trabajo a la capa de servicios.
 - Entidades, son los objetos que devuelve la api.
 - Beans, son los objetos que entran por la api, de esta forma no me tengo que preocupar de que se intente modificar un campo como por ejemplo el id de un producto que ya existe. 
