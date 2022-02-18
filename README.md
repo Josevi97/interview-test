@@ -2,6 +2,9 @@
 
 ## Docker
 La imagen de docker que contiene ambos servicios es: josevi97/interview-test
+Al arrancar el contenedor, el servicio de mysql se iniciará así como el tomcat.
+Tomcat estará funcionando por defecto en el puerto 8080
+
 
 ## Aplicación
 La aplicación se divide empezando desde la capa más cercana a la base de datos, de la siguiente manera:
