@@ -6,6 +6,9 @@ La imagen de docker es: josevi97/interview-test
 Al arrancar el contenedor, el servicio de mysql se iniciará así como el tomcat.
 Tomcat estará funcionando por defecto en el puerto 8080
 
+Ejemplo de llamada a la API
+http://localhost:8081/pproject-0.0.1-SNAPSHOT/products
+
 
 ## Aplicación
 La aplicación se divide empezando desde la capa más cercana a la base de datos, de la siguiente manera:
